@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-const Project = () => {
-   return (
+const Projects = () => {
+  return (
     <div className="min-h-screen flex flex-col items-center pt-24 bg-black text-white font-syne px-4 text-center">
       <h1 className="text-3xl md:text-5xl font-bold mb-6">🚧 Page Not Ready</h1>
       <p className="text-lg md:text-2xl mb-4">
@@ -21,4 +21,4 @@ const Project = () => {
   );
 }
 
-export default Project
+export default Projects
