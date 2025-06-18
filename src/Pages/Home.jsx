@@ -24,7 +24,7 @@ import TestimonialSlider from '../components/TestiMonialSlider';
 
 const Home = () => {
   return (
-    <div className='bg-black text-white scroll-smooth'>
+    <div className='bg-black text-white scroll-smooth pb-16'>
       <div className="bg-black flex flex-col pt-16 md:pt-36 justify-center items-center  px-4">
         <h1 className="text-white text-center font-extrabold uppercase text-3xl md:text-6xl font-[Syne]">
           <span >

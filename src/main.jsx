@@ -6,6 +6,8 @@ import { BrowserRouter, Routes,Route } from 'react-router-dom'
 import Home from '../src/Pages/Home.jsx'
 import About from '../src/Pages/About.jsx'
 import Projects from './Pages/Projects.jsx'
+import Contact from './Pages/Contact.jsx'
+import PageNotFound from './Pages/PageNotFound.jsx'
 
 
 createRoot(document.getElementById('root')).render(

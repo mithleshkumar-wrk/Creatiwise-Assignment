@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@200;300;400&display=swap');
+
 @import "tailwindcss";
 /* App.css or index.css */
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@200;300;400&display=swap');
 
 body {
   font-family: 'Syne', sans-serif;
