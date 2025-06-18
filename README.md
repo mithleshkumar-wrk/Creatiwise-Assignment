@@ -1,65 +1,120 @@
-# Creatiwise
+# Creatiwise Assignment
 
-Creatiwise is a modern portfolio website built with React, Vite, and Tailwind CSS. This project demonstrates a modular approach to building scalable React applications, with a focus on clean code, reusable components, and a clear folder structure.
-
-## Why This Structure?
-
-- **components/**: Contains all reusable UI components (e.g., Header, Footer, Card, BlogCard, ExperienceCard, TestimonialSlider). This makes it easy to maintain and reuse code across different pages.
-- **pages/**: Each file in this folder represents a route/page in the application (e.g., Home, About, Contact, Project, PageNotFound). This separation keeps page logic organized and easy to manage.
-- **assets/**: Stores all static images and icons used throughout the site.
-- **App.jsx**: The main layout component that includes the header, footer, and an outlet for rendering pages.
-- **main.jsx**: Entry point for the React app, sets up routing using React Router.
-
-## How to Run This Project
-
-1. **Clone the repository:**
-   ```sh
-   git clone <repo-url>
-   cd Creatiwise
-   ```
-
-2. **Install dependencies:**
-   ```sh
-   npm install
-   ```
-
-3. **Start the development server:**
-   ```sh
-   npm run dev
-   ```
-   The app will be available at [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
-
-4. **Build for production:**
-   ```sh
-   npm run build
-   ```
-
-5. **Preview the production build:**
-   ```sh
-   npm run preview
-   ```
-
-## How to Close/Remove This Repo
-
-If you want to remove this project from your local machine:
-
-- On Windows: Right-click the folder and select "Delete".
-- On macOS/Linux: Run `rm -rf Creatiwise` in your terminal.
-
-If you want to remove the repository from GitHub, go to the repository settings on GitHub and choose "Delete this repository" at the bottom (be careful, this is irreversible).
+A modern, responsive portfolio website built with **React**, **Vite**, and **Tailwind CSS**. This project demonstrates best practices in React development, modular code structure, and clean UI/UX design.
 
 ---
 
-## Original Vite + React Template Info
+## 🚀 Live Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **Deployed Site:** [https://creatiwise-assignment-dun.vercel.app/](https://creatiwise-assignment-dun.vercel.app/)
 
-Currently, two official plugins are available:
+## 📂 Repository
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **GitHub Repo:** [https://github.com/mithleshkumar-wrk/Creatiwise-Assignment](https://github.com/mithleshkumar-wrk/Creatiwise-Assignment)
 
-### Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your
+## 📖 About the Project
 
+Creatiwise is designed as a professional portfolio to showcase skills, projects, and experiences. The project is structured for scalability and maintainability, using reusable components and organized pages.
+
+### 🏗️ Project Structure
+
+```
+Creatiwise/
+│
+├── components/        # Reusable UI components
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   ├── Card.jsx
+│   ├── BlogCard.jsx
+│   ├── ExperienceCard.jsx
+│   └── TestimonialSlider.jsx
+│
+├── pages/             # Application pages/routes
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Projects.jsx
+│   ├── Contact.jsx
+│   └── PageNotFound.jsx
+│
+├── assets/            # Images, icons, and static files
+│
+├── App.jsx            # Main layout 
+├── main.jsx           # Entry point and routing
+└── ...
+```
+
+### ✨ Key Features
+
+- **Reusable Components:** Modular components for easy maintenance and scalability.
+- **Multiple Pages:** Home, About, Projects, Contact, and 404 Page Not Found.
+- **Responsive Design:** Fully responsive layout using Tailwind CSS.
+- **Routing:** Seamless navigation with React Router.
+- **Clean UI:** Modern and minimalistic design.
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the Repository
+
+```sh
+git clone https://github.com/mithleshkumar-wrk/Creatiwise-Assignment.git
+cd Creatiwise-Assignment
+```
+
+### 2. Install Dependencies
+
+```sh
+npm install
+```
+
+### 3. Run the Development Server
+
+```sh
+npm run dev
+```
+Visit [http://localhost:5173](http://localhost:5173) to view the app locally.
+
+### 4. Build for Production
+
+```sh
+npm run build
+```
+
+### 5. Preview Production Build
+
+```sh
+npm run preview
+```
+
+---
+
+## 🧹 How to Remove/Close This Repo
+
+- **Delete Locally:**  
+  On Windows, right-click the project folder and select "Delete".  
+  Or run `rm -rf Creatiwise-Assignment` in your terminal (macOS/Linux).
+
+- **Delete from GitHub:**  
+  Go to the repository settings on GitHub and select "Delete this repository" at the bottom (irreversible).
+
+---
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 🙏 Acknowledgements
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+
+---
+
+Feel free to use this project as a template for your own portfolio or web applications!

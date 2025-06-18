@@ -1,61 +1,51 @@
 import React, { useState } from "react";
 
 
-const slides = [
-  { name: "Floyd", message: "Hired Fast!" },
-  { name: "Jane", message: "Easy to Use!" },
-  
+const images = [
+  'https://source.unsplash.com/random/800x400?nature',
+  'https://source.unsplash.com/random/800x400?water',
+  'https://source.unsplash.com/random/800x400?sky',
+  'https://source.unsplash.com/random/800x400?forest'
 ];
 
 const TestimonialSlider = () => {
-  const [index, setIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNext = () => {
-    if (index < slides.length - 1) {
-      setIndex(index + 1);
-    } else {
-      setIndex(0); // Go to first
-    }
+  const prevSlide = () => {
+    const isFirst = currentIndex === 0;
+    setCurrentIndex(isFirst ? images.length - 1 : currentIndex - 1);
   };
 
-  const handlePrev = () => {
-    if (index > 0) {
-      setIndex(index - 1);
-    } else {
-      setIndex(slides.length - 1); // Go to last
-    }
+  const nextSlide = () => {
+    const isLast = currentIndex === images.length - 1;
+    setCurrentIndex(isLast ? 0 : currentIndex + 1);
   };
 
   return (
-    <div className="min-h-screen bg-black flex flex-col items-center justify-center text-white px-4">
-      <div className="w-full max-w-md overflow-hidden relative">
-        <div
-          className="flex transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${index * 100}%)` }}
-        >
-          {slides.map((item, i) => (
-            <div key={i} className="min-w-full px-6 py-8 bg-gray-800 rounded-lg shadow text-center">
-              <p className="text-xl font-bold">{item.name}</p>
-              <p className="text-gray-300 italic mt-2">"{item.message}"</p>
-            </div>
-          ))}
-        </div>
+    <div className="relative w-full max-w-3xl mx-auto overflow-hidden">
+      <div className="flex transition-transform duration-500"
+           style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+        {images.map((src, index) => (
+          <img key={index} src={src} alt={`Slide ${index}`}
+               className="min-w-full h-64 object-cover" />
+        ))}
       </div>
 
-      <div className="flex gap-4 mt-6">
-        <button
-          onClick={handlePrev}
-          className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200"
-        >
-          Prev
-        </button>
-        <button
-          onClick={handleNext}
-          className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200"
-        >
-          Next
-        </button>
-      </div>
+      {/* Left button */}
+      <button
+        onClick={prevSlide}
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/70 text-black p-2 rounded-full hover:bg-white transition"
+      >
+        &#8592;
+      </button>
+
+      {/* Right button */}
+      <button
+        onClick={nextSlide}
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/70 text-black p-2 rounded-full hover:bg-white transition"
+      >
+        &#8594;
+      </button>
     </div>
   );
 };
