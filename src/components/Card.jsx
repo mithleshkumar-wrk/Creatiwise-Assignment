@@ -7,7 +7,7 @@ const Card = (props,className='') => {
 
             <div style={{ backgroundImage: `url(${Ellipse})` }} className='bg-[#CBCBCB7A] bg-cover bg-center  w-full p-4 md:p-8 rounded-4xl md:rounded-[3rem] flex flex-col md:flex-row justify-center  gap-8'>
                 <div className='md:w-1/2 '>
-                    <img className='w-full md:w-[68rem] md:h-[27rem] rounded-2xl  md:rounded-3xl' src={props.img} alt="envelope" />
+                    <img className='w-full md:w-[68rem] md:h-[24rem] rounded-2xl  md:rounded-3xl' src={props.img} alt="envelope" />
                 </div>
                 <div className='md:w-1/2 flex flex-col justify-center md:justify-between md:items-start '>
                     <div className=' flex flex-col '>

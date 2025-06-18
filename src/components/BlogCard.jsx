@@ -6,7 +6,7 @@ const BlogCard = (props) => {
             <div className='flex flex-col md:flex-row justify-center  md:justify-between items-center'>
                 <div className='flex flex-col md:flex-row gap-8 items-center'>
                     <div>
-                        <img className='w-full md:h-52 rounded-4xl' src={props.img} alt="img" />
+                        <img className='w-full md:h-48 rounded-4xl' src={props.img} alt="img" />
                     </div>
                     <div className='flex flex-col'>
                         <h3 className='text-xl font-light mb-2 md:mb-4'>{props.date}</h3>

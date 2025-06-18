@@ -209,7 +209,7 @@ const Home = () => {
         <div className='px-8 md:px-24 md:py-16'>
           <div className=' flex flex-row  items-center gap-2'>
             <img className='h-8' src={Star} alt="Star" />
-            <h2 className='text-3xl md:text-4xl font-semibold '>Blog</h2>
+            <h2 className='text-3xl md:text-4xl font-semibold '>What they say</h2>
           </div>
           <div>
            <TestimonialSlider/>
