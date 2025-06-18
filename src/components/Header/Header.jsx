@@ -22,7 +22,7 @@ const Header = () => {
     }, [])
 
     return (
-        <nav className={`fixed w-full bg-black text-white md:px-14 px-8 py-5  overflow-x-hidden z-20 transition-all duration-300 ${showBorder ? 'border-b border-[#313131]' : 'border-b border-black'
+        <nav className={`fixed w-full bg-black text-white md:px-14 px-8 py-3  overflow-x-hidden z-20 transition-all duration-300 ${showBorder ? 'border-b border-[#313131]' : 'border-b border-black'
             }`}>
 
             {/* Desktop Layout */}
