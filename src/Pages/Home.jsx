@@ -24,7 +24,7 @@ import TestimonialSlider from '../components/TestiMonialSlider';
 
 const Home = () => {
   return (
-    <div className='bg-black text-white scroll-smooth pb-16'>
+    <div className='bg-black text-white scroll-smooth pb-16 md:pb-0'>
       <div className="bg-black flex flex-col pt-16 md:pt-36 justify-center items-center  px-4">
         <h1 className="text-white text-center font-extrabold uppercase text-3xl md:text-6xl font-[Syne]">
           <span >
@@ -216,7 +216,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='px-8 md:px-24 flex flex-col justify-center p  y-16'>
+        <div className='px-8 md:px-24 flex flex-col justify-center  y-16'>
           <div className=' flex flex-row   gap-2 mb-6'>
             <img className='h-8' src={Star} alt="Star" />
             <h1 className='text-3xl md:text-4xl font-semibold '>Frequently asked questions</h1>
