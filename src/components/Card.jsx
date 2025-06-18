@@ -14,7 +14,7 @@ const Card = (props,className='') => {
                         <h1 className='text-2xl md:text-4xl font-[Syne] font-semibold'>{props.title}</h1>
                         <h3 className='pt-6 font-[Poppins] font-extralight'>{props.paragraph}</h3>
 
-                        <div className={`py-6 md:py-4 flex flex-row gap-6 justify-center  items-center lg:-translate-x-44 ${className}` }>
+                        <div className={`py-6 md:py-4 flex flex-row gap-6 justify-start  items-center  ` }>
                             <button className='px-6 py-1 border rounded-full cursor-pointer hover:bg-white hover:text-black hover:border-white transition duration-300 font-[Syne] font-semibold text-sm active:bg-transparent active:text-white'>{props.button1}</button>
                             <button className='px-6 py-1 border rounded-full text-center cursor-pointer hover:bg-white hover:text-black hover:border-white transition duration-300 font-[Syne] font-semibold text-sm active:bg-transparent active:text-white'>{props.button2}</button>
                         </div>
