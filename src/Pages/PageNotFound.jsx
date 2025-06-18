@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const PageNotFound = () => {
    return (
-    <div className="min-h-screen flex flex-col  items-center bg-black text-white px-4 text-center font-syne">
+    <div className=" flex flex-col  items-center bg-black text-white px-4 text-center font-syne pt-16 ">
       <h1 className="text-[6rem] md:text-[8rem] font-bold mb-4">404</h1>
       <h2 className="text-2xl md:text-4xl font-semibold mb-6">Page Not Found</h2>
       
