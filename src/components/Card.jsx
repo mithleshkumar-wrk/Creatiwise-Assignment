@@ -19,7 +19,7 @@ const Card = (props,className='') => {
                             <button className='px-6 py-1 border rounded-full text-center cursor-pointer hover:bg-white hover:text-black hover:border-white transition duration-300 font-[Syne] font-semibold text-sm active:bg-transparent active:text-white'>{props.button2}</button>
                         </div>
                     </div>
-                    <button className='px-8 py-3 md:py-4 border border-white bg-white text-black rounded-full  cursor-pointer hover:bg-transparent hover:text-white transition duration-300 hover:border hover:border-white font-[Syne] font-semibold active:bg-white active:text-black'>View Case Study</button>
+                    <button className='px-8 py-3 border border-white bg-white text-black rounded-full  cursor-pointer hover:bg-transparent hover:text-white transition duration-300 hover:border hover:border-white font-[Syne] font-semibold active:bg-white active:text-black'>View Case Study</button>
                 </div>
             </div>
         </>
